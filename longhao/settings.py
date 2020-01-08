@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@9(pnctplz492okza+2k%3b_qm%d4=@eo%0c18@50e42x*d(-p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.longhaotianhua.com', '47.111.227.202']
+ALLOWED_HOSTS = ['.longhaotianhua.com', '47.111.227.202', '47.105.154.198']
 
 # ALLOWED_HOSTS = ['*']
 
