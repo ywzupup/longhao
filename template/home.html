@@ -61,34 +61,29 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="top-bar-content">
-                                        <div class="top-bar-address">
-                                            <div class="address"><span>ADDRESS:</span>北京市朝阳区望京东路锐创国际B座1802</div>
-                                            <div class="address"><span>ADDRESS2:</span>北京市平谷区府前西街2号渔阳大厦712室</div>
-                                        </div>
 
                                         <div class="top-bar-logo">
                                             <div id="site-logo" class="clearfix">
                                                 <div id="site-logo-inner">
-                                                    <a href="{% url 'longhaotianhua:home' %}" title="隆浩天华" rel="home" class="main-logo"><img
-                                                            src="{% static 'imgs/logo.png' %}" width="199" height="50"
-                                                            alt="隆浩天华" data-retina="{% static 'imgs/logo.png' %}"
-                                                            data-width="199" data-height="50"></a>
+                                                    <div id="site-logo-inner">
+                                                        <a href="{% url 'longhaotianhua:home' %}" title="隆浩天华"
+                                                            rel="home" class="main-logo"><img
+                                                                src="{% static 'imgs/logo.png' %}" width="199"
+                                                                height="50" alt="隆浩天华"
+                                                                data-retina="{% static 'imgs/logo.png' %}"
+                                                                data-width="199" data-height="50"></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="contact-info">
-                                            <div class="email"><span>Email: </span>wenjian@longhaotianhua.com</div>
-                                            <div class="phone-number"><span>hotline: </span><a href="#">010-57258453</a>
-                                            </div>
-                                        </div><!-- .top-bar-content -->
                                     </div><!-- .col-md-12 -->
                                 </div><!-- .row -->
                             </div><!-- .container-fluid -->
                         </div><!-- .top-bar-inner -->
                     </div><!-- #top-bar -->
 
-                    <header id="site-header">
+                    <header id="site-header" style="background-color: #063763; opacity: 0.9;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -103,18 +98,40 @@
                                                     </li>
 
                                                     <li class="menu-item menu-item-has-children"><a
-                                                            href="{% url 'longhaotianhua:plan' %}">融资规划</a>
+                                                            href="{% url 'longhaotianhua:plan' %}">融资计划</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="{% url 'longhaotianhua:plan' %}">高新科技类企业</a></li>
-                                                            <li class="menu-item"><a href="{% url 'longhaotianhua:plan' %}">文创类企业</a></li>
-                                                            <li class="menu-item"><a href="{% url 'longhaotianhua:plan' %}">农业类企业</a></li>
-                                                            <li class="menu-item"><a href="{% url 'longhaotianhua:plan' %}">传统行业</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">高新科技类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">文创类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">农业类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">传统行业</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">其他</a></li>
                                                         </ul>
                                                     </li>
 
-                                                    <li class="menu-item"><a href="{% url 'longhaotianhua:example' %}">案例展示</a>
+
+                                                    <li class="menu-item"><a
+                                                            href="{% url 'longhaotianhua:example' %}">案例展示</a>
                                                     </li>
-                                                    <li class="menu-item"><a href="{% url 'longhaotianhua:contactus' %}">融资申请</a></li>
+                                                    <li class="menu-item menu-item-has-children"><a
+                                                            href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:contactus' %}">额度测算</a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
                                                     <li class="menu-item menu-item-has-children"><a
                                                             href="{% url 'longhaotianhua:aboutus' %}">关于我们</a></li>
 
@@ -191,7 +208,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:example' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:example' %}"
                                                                 class="cbr-button big button-light outline outline-light outline-1px"><span>案例展示</span></a>
                                                         </div>
                                                     </div>
@@ -209,7 +227,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:contactus' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:contactus' %}"
                                                                 class="cbr-button big button-white outline-1px"><span>融资申请</span></a>
                                                         </div>
                                                     </div>
@@ -270,7 +289,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:example' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:example' %}"
                                                                 class="cbr-button big button-light outline outline-light outline-1px"><span>案例展示</span></a>
                                                         </div>
                                                     </div>
@@ -288,7 +308,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:contactus' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:contactus' %}"
                                                                 class="cbr-button big button-white outline-1px"><span>融资申请</span></a>
                                                         </div>
                                                     </div>
@@ -349,7 +370,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:example' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:example' %}"
                                                                 class="cbr-button big button-light outline outline-light outline-1px"><span>案例展示</span></a>
                                                         </div>
                                                     </div>
@@ -367,7 +389,8 @@
                                                         data-textAlign="['center','left','left','left']"
                                                         data-paddingtop="[10,10,10,10]" data-paddingright="[0,0,0,0]"
                                                         data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]">
-                                                        <div class="button-wrap"><a href="{% url 'longhaotianhua:contactus' %}"
+                                                        <div class="button-wrap"><a
+                                                                href="{% url 'longhaotianhua:contactus' %}"
                                                                 class="cbr-button big button-white outline-1px"><span>融资申请</span></a>
                                                         </div>
                                                     </div>
@@ -387,9 +410,12 @@
 
                                                 <div class="col-md-5">
                                                     <div class="cbr-headings">
-                                                        <h6 class="pre-heading">合作银行</h6>
-                                                        <h2 class="heading">TRUSTWORTHY</h2>
-                                                        <p class="sub-heading">资金来源包含国有银行及商业银行，结合多种融资解决方案，低成本、高效率</p>
+                                                        <h6 class="heading" style="color: #063763; font-size: 34px;">
+                                                            隆浩天华</h6>
+
+                                                        <p class="sub-heading">
+                                                            为京津冀地区的产业园区、高新园区、文创园区、农业园区以及各行业协会的企业提供融资服务，累计完成10个亿的融资额度，帮助企业稳步成长。
+                                                        </p>
                                                     </div><!-- .cbr-headings -->
                                                     <div class="cbr-spacer clearfix" data-desktop="45" data-mobi="35"
                                                         data-smobi="35"></div>
@@ -486,14 +512,12 @@
                                                     <div class="container">
                                                         <div class="row">
                                                             <div class="col-md-12">
-                                                                <h2 class="widget-title"><span>合作机构</span></h2>
-                                                                <h2 class="widget-title3">
-                                                                    <span>资金来源包含国有银行及商业银行，结合多种融资解决方案，低成本、高效率</span></h2>
-
-
+                                                                <h2 class="widget-title" style="font-size: 34px;">
+                                                                    <span>合作机构</span></h2>
                                                                 <div class="cbr-partner owl-nav-disable owl-dots-disable"
-                                                                    data-auto="true" data-loop="true" data-gap="30"
+                                                                    data-auto="true" data-loop="false" data-gap="30"
                                                                     data-column="4" data-column2="3" data-column3="2">
+
                                                                     <div class="owl-carousel owl-theme">
                                                                         <div class="thumb">
                                                                             <a href="#">
@@ -522,7 +546,10 @@
                                                                                     alt="Image">
                                                                             </a>
                                                                         </div>
+                                                                    </div>
 
+                                                                    <div class="owl-carousel owl-theme"
+                                                                        style="margin-top: 20px; margin-bottom: 20px;">
                                                                         <div class="thumb">
                                                                             <a href="#">
                                                                                 <img src="{% static 'imgs/slide/5.png' %}"
@@ -532,14 +559,7 @@
 
                                                                         <div class="thumb">
                                                                             <a href="#">
-                                                                                <img src="{% static 'imgs/slide/6.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/7.png' %}"
+                                                                                <img src="{% static 'imgs/slide/6.jpg' %}"
                                                                                     alt="Image">
                                                                             </a>
                                                                         </div>
@@ -557,10 +577,12 @@
                                                                                     alt="Image">
                                                                             </a>
                                                                         </div>
+                                                                    </div>
 
+                                                                    <div class="owl-carousel owl-theme">
                                                                         <div class="thumb">
                                                                             <a href="#">
-                                                                                <img src="{% static 'imgs/slide/10.png' %}"
+                                                                                <img src="{% static 'imgs/slide/10.jpg' %}"
                                                                                     alt="Image">
                                                                             </a>
                                                                         </div>
@@ -581,117 +603,12 @@
 
                                                                         <div class="thumb">
                                                                             <a href="#">
-                                                                                <img src="{% static 'imgs/slide/13.png' %}"
+                                                                                <img src="{% static 'imgs/slide/4.png' %}"
                                                                                     alt="Image">
                                                                             </a>
                                                                         </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/14.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/15.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/16.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/17.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/18.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/19.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/20.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/21.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/22.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/23.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/24.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/25.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/26.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/27.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
-                                                                        <div class="thumb">
-                                                                            <a href="#">
-                                                                                <img src="{% static 'imgs/slide/28.png' %}"
-                                                                                    alt="Image">
-                                                                            </a>
-                                                                        </div>
-
                                                                     </div>
+
                                                                 </div><!-- .cbr-carousel-box -->
                                                             </div><!-- .col-md-12 -->
                                                         </div><!-- .row -->
@@ -743,23 +660,14 @@
                                                 <img src="{% static 'imgs/logo_light.png' %}" width="199" height="50"
                                                     alt="Image">
                                             </div>
-                                            <p class="copyright"> Copyright © 2019 <a
-                                                    href="{% url 'longhaotianhua:home' %}">LONGHAOTIANHUA</a>, 隆浩天华,
-                                                信息咨询有限公司 </p>
+                                            <p class="copyright"> Copyright © 2020 <a
+                                                    href="{% url 'longhaotianhua:home' %}">LONGHAOTIANHUA</a>,隆浩天华企业管理有限责任公司
+                                            </p>
                                         </div>
 
-                                        <div class="socials clearfix">
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-weixin"></i></a>
-                                            </div>
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-weibo"></i></a></div>
-                                            <div class="icon"><a target="_blank" href="#"><i class="fa fa-qq"></i></a>
-                                            </div>
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-phone"></i></a>
-                                            </div>
-                                        </div>
+                                        <img src="{% static 'imgs/qrcode.png' %}"
+                                            style="width: 100px; height: 100px;" />
+
                                     </div><!-- .widget widget_about -->
                                 </div><!-- .col-md-4 -->
 
@@ -768,9 +676,12 @@
                                         <h2 class="widget-title2"><span>其他链接</span></h2>
                                         <ul>
                                             <li class="cat-item"><a href="{% url 'longhaotianhua:plan' %}">融资规划</a></li>
-                                            <li class="cat-item"><a href="{% url 'longhaotianhua:aboutus' %}">关于我们</a></li>
-                                            <li class="cat-item"><a href="{% url 'longhaotianhua:example' %}">案例展示</a></li>
-                                            <li class="cat-item"><a href="{% url 'longhaotianhua:contactus' %}">融资申请</a></li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:aboutus' %}">关于我们</a>
+                                            </li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:example' %}">案例展示</a>
+                                            </li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                            </li>
                                         </ul>
                                     </div><!-- .widget widget_links -->
                                 </div><!-- .col-md-4 -->
@@ -801,7 +712,8 @@
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
-        <script src="{% static 'includes/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+        <script
+            src="{% static 'includes/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
         <script src="{% static 'includes/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>

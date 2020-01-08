@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.longhaotianhua.com', '47.111.227.202']
 
+# ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 

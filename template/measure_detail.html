@@ -57,34 +57,29 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="top-bar-content">
-                                        <div class="top-bar-address">
-                                            <div class="address"><span>ADDRESS:</span>北京市朝阳区望京东路锐创国际B座1802</div>
-                                            <div class="address"><span>ADDRESS2:</span>北京市平谷区府前西街2号渔阳大厦712室</div>
-                                        </div>
 
                                         <div class="top-bar-logo">
                                             <div id="site-logo" class="clearfix">
                                                 <div id="site-logo-inner">
-                                                    <a href="{% url 'longhaotianhua:home' %}" title="隆浩天华" rel="home" class="main-logo"><img
-                                                            src="{% static 'imgs/logo.png' %}" width="199" height="50"
-                                                            alt="隆浩天华" data-retina="{% static 'imgs/logo.png' %}"
-                                                            data-width="199" data-height="50"></a>
+                                                    <div id="site-logo-inner">
+                                                        <a href="{% url 'longhaotianhua:home' %}" title="隆浩天华"
+                                                            rel="home" class="main-logo"><img
+                                                                src="{% static 'imgs/logo.png' %}" width="199"
+                                                                height="50" alt="隆浩天华"
+                                                                data-retina="{% static 'imgs/logo.png' %}"
+                                                                data-width="199" data-height="50"></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="contact-info">
-                                            <div class="email"><span>Email: </span>wenjian@longhaotianhua.com</div>
-                                            <div class="phone-number"><span>hotline: </span><a href="#">010-57258453</a>
-                                            </div>
-                                        </div><!-- .top-bar-content -->
                                     </div><!-- .col-md-12 -->
                                 </div><!-- .row -->
                             </div><!-- .container-fluid -->
                         </div><!-- .top-bar-inner -->
                     </div><!-- #top-bar -->
 
-                    <header id="site-header">
+                    <header id="site-header" style="background-color: #063763; opacity: 0.9;">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -94,24 +89,47 @@
 
                                             <nav id="main-nav" class="main-nav clearfix">
                                                 <ul id="menu-primary-menu" class="menu clearfix">
-                                                    <li class="menu-item"><a href="{% url 'longhaotianhua:home' %}">首页</a>
+                                                    <li class="menu-item"><a
+                                                            href="{% url 'longhaotianhua:home' %}">首页</a>
                                                     </li>
 
                                                     <li class="menu-item menu-item-has-children"><a
                                                             href="{% url 'longhaotianhua:plan' %}">融资计划</a>
                                                         <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="{%  url 'longhaotianhua:plan' %}">高新科技类企业</a></li>
-                                                            <li class="menu-item"><a href="{%  url 'longhaotianhua:plan' %}">文创类企业</a></li>
-                                                            <li class="menu-item"><a href="{%  url 'longhaotianhua:plan' %}">农业类企业</a></li>
-                                                            <li class="menu-item"><a href="{%  url 'longhaotianhua:plan' %}">传统行业</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">高新科技类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">文创类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">农业类企业</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">传统行业</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:plan' %}">其他</a></li>
                                                         </ul>
                                                     </li>
 
-                                                    <li class="menu-item"><a href="{%  url 'longhaotianhua:example' %}">案例展示</a>
+
+                                                    <li class="menu-item"><a
+                                                            href="{% url 'longhaotianhua:example' %}">案例展示</a>
                                                     </li>
-                                                    <li class="menu-item"><a href="{%  url 'longhaotianhua:contactus' %}">融资申请</a></li>
                                                     <li class="menu-item menu-item-has-children"><a
-                                                            href="{%  url 'longhaotianhua:aboutus' %}">关于我们</a></li>
+                                                            href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                                        <ul class="sub-menu">
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="{% url 'longhaotianhua:contactus' %}">额度测算</a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-has-children"><a
+                                                            href="{% url 'longhaotianhua:aboutus' %}">关于我们</a></li>
 
                                         </div>
                                     </div><!-- .site-header-inner -->
@@ -130,7 +148,8 @@
                                     <div class="featured-title-inner">
                                         <div id="breadcrumbs">
                                             <div class="breadcrumb-trail">
-                                                <a href="{% url 'longhaotianhua:home' %}" title="Home">首页</a><span>后台管理</span>
+                                                <a href="{% url 'longhaotianhua:home' %}"
+                                                    title="Home">首页</a><span>后台管理</span>
                                             </div>
                                         </div>
 
@@ -205,9 +224,8 @@
                                             </li>
                                             <li class="clearfix">
                                                 <div class="inner">
-                                                    <span class="address"><a href="#">北京市朝阳区望京东路锐创国际B座1802</a></span>
-                                                    <span class="address"><a
-                                                            href="#"><br>北京市平谷区府前西街2号渔阳大厦712室</a></span>
+                                                    <span class="address"><a>北京市朝阳区望京东路锐创国际B座1802</a></span>
+                                                    <span class="address"><a><br>北京市平谷区府前西街2号渔阳大厦712室</a></span>
                                                 </div>
                                             </li>
                                             <li class="clearfix">
@@ -227,23 +245,14 @@
                                                 <img src="{% static 'imgs/logo_light.png' %}" width="199" height="50"
                                                     alt="Image">
                                             </div>
-                                            <p class="copyright"> Copyright © 2019 <a
-                                                    href="{%  url 'longhaotianhua:home' %}">LONGHAOTIANHUA</a>, 隆浩天华,
-                                                信息咨询有限公司 </p>
+                                            <p class="copyright"> Copyright © 2020 <a
+                                                    href="{% url 'longhaotianhua:home' %}">LONGHAOTIANHUA</a>,隆浩天华企业管理有限责任公司
+                                            </p>
                                         </div>
 
-                                        <div class="socials clearfix">
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-weixin"></i></a>
-                                            </div>
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-weibo"></i></a></div>
-                                            <div class="icon"><a target="_blank" href="#"><i class="fa fa-qq"></i></a>
-                                            </div>
-                                            <div class="icon"><a target="_blank" href="#"><i
-                                                        class="fa fa-phone"></i></a>
-                                            </div>
-                                        </div>
+                                        <img src="{% static 'imgs/qrcode.png' %}"
+                                            style="width: 100px; height: 100px;" />
+
                                     </div><!-- .widget widget_about -->
                                 </div><!-- .col-md-4 -->
 
@@ -251,10 +260,13 @@
                                     <div class="widget widget_links">
                                         <h2 class="widget-title2"><span>其他链接</span></h2>
                                         <ul>
-                                            <li class="cat-item"><a href="{%  url 'longhaotianhua:plan' %}">融资规划</a></li>
-                                            <li class="cat-item"><a href="{%  url 'longhaotianhua:aboutus' %}">关于我们</a></li>
-                                            <li class="cat-item"><a href="{%  url 'longhaotianhua:example' %}">案例展示</a></li>
-                                            <li class="cat-item"><a href="{%  url 'longhaotianhua:contactus' %}">融资申请</a></li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:plan' %}">融资规划</a></li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:aboutus' %}">关于我们</a>
+                                            </li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:example' %}">案例展示</a>
+                                            </li>
+                                            <li class="cat-item"><a href="{% url 'longhaotianhua:contactus' %}">融资申请</a>
+                                            </li>
                                         </ul>
                                     </div><!-- .widget widget_links -->
                                 </div><!-- .col-md-4 -->
